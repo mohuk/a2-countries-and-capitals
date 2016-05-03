@@ -5,7 +5,7 @@ import {Component} from 'angular2/core';
   template: `
     <h1>{{title}}</h1>
   `,
-  styleUrls: ['src/styles.css']
+  styleUrls: ['src/shell/shell.css']
 })
 export class Header {
   title: String = 'Countries and Capitals';
