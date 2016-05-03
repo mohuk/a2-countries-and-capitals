@@ -1,11 +1,12 @@
 import {bootstrap} from 'angular2/platform/browser';
 import {Component} from 'angular2/core';
+import {Header} from './header.component';
+import {CountriesList} from './countries-list.component';
 
 @Component({
   selector: 'app',
-  template: `
-  	<h1>Countries and Capitals</h1>
-  `,
+  templateUrl: 'src/shell.html',
+  directives: [Header, CountriesList]
 })
 export class App {}
 

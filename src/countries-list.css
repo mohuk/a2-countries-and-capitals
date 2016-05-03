@@ -1,0 +1,36 @@
+.countries-list table, th, td {
+   border: 1px solid black;
+}
+
+.countries-list table {
+  width: 100%;
+}
+
+.countries-list th, td {
+  padding: 10px 0;
+}
+
+.countries-list th {
+  font-weight: bold;
+}
+
+.countries-list thead tr {
+  background-color: gainsboro;
+}
+
+.countries-list button {
+  margin-top: 15px;
+}
+
+.country-title {
+  font-size: 42px;
+}
+
+.country-details table, th, td {
+   border: 0px;
+}
+
+.country-details table {
+  width: 60%;
+  margin: 0 auto;
+}
