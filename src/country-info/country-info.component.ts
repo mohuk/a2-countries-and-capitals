@@ -1,6 +1,7 @@
 import {Component, OnInit} from 'angular2/core';
-import {ICountry} from '../country';
 import {RouteParams} from 'angular2/router';
+
+import {ICountry} from '../country';
 import {geonames} from '../geonames.service';
 
 @Component({
