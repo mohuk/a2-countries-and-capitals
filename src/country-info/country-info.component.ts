@@ -19,6 +19,8 @@ export class CountryInfo implements OnInit {
     private _geonames: geonames
   ){
     this.country = <ICountry>{}
+    this.countryMapUrl = 'http://placehold.it/350x150';
+    this.countryFlagUrl = 'http://placehold.it/350x150';
   }
 
   ngOnInit (){

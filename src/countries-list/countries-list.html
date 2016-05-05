@@ -12,7 +12,9 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let country of countries">
+        <tr 
+          *ngFor="let country of countries"
+          (click)="onSelect(country)">
           <td>
             <a href="">{{country.countryName}}</a>
           </td>

@@ -18,6 +18,14 @@
   background-color: gainsboro;
 }
 
+.countries-list tbody tr {
+  cursor: pointer;
+}
+
+.countries-list tbody tr:hover {
+  background-color: #F5F6F5;
+}
+
 .countries-list button {
   margin-top: 15px;
 }
