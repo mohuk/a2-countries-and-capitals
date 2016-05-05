@@ -1,7 +1,7 @@
 <div class="country-title">
   <h1>{{country.countryName}}</h1>
 </div>
-<div class="country-details">
+<div class="country-details" *ngIf="country.countryName">
     <table>
       <tr>
         <td>Population of country:</td>
@@ -19,7 +19,9 @@
         <td>Population of Capital:</td>
         <td>{{country.population }}</td>
       </tr>
+      <tr>
         <td><img [src]="countryFlagUrl"/></td>
         <td><img [src]="countryMapUrl"/></td>
+      </tr>
     </table>
 </div>

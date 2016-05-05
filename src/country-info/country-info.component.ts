@@ -1,6 +1,7 @@
 import {Component, OnInit} from 'angular2/core';
-import {ICountry} from '../country';
 import {RouteParams} from 'angular2/router';
+
+import {ICountry} from '../country';
 import {geonames} from '../geonames.service';
 
 @Component({
@@ -19,6 +20,8 @@ export class CountryInfo implements OnInit {
     private _geonames: geonames
   ){
     this.country = <ICountry>{}
+    this.countryMapUrl = 'http://placehold.it/350x150';
+    this.countryFlagUrl = 'http://placehold.it/350x150';
   }
 
   ngOnInit (){
