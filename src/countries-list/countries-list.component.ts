@@ -1,13 +1,16 @@
 
 import {Component, OnInit} from 'angular2/core';
 import { Router } from 'angular2/router';
+
+import {FilterCountryPipe} from './pipes/filter-country.pipe';
 import {ICountry} from '../country';
 import {geonames} from '../geonames.service';
 
 @Component({
   selector: 'countries-list',
   templateUrl: 'src/countries-list/countries-list.html',
-  styleUrls: ['src/countries-list/countries-list.css']
+  styleUrls: ['src/countries-list/countries-list.css'],
+  pipes: [FilterCountryPipe]
 })
 export class CountriesList implements OnInit {
   countries: ICountry[];
