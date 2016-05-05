@@ -21,4 +21,14 @@ export class geonames {
       .do(data => console.log(data))
       .catch(error => Observable.throw(error.json()));
   }
+
+  country(countryCode: string): Observable<ICountry>{
+    let params:URLSearchParams = new URLSearchParams();
+    params.set('username', 'mohuk');
+    params.set('country', countryCode);
+    return this._http.get(`${this._baseUrl}/countryInfoJSON`, {search: params})
+      .map((response: Response) => <ICountry>response.json().geonames[0])
+      .do(data => console.log(data))
+      .catch(error => Observable.throw(error.json()));
+  }
 }

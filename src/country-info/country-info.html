@@ -1,0 +1,25 @@
+<div class="country-title">
+  <h1>{{country.countryName}}</h1>
+</div>
+<div class="country-details">
+    <table>
+      <tr>
+        <td>Population of country:</td>
+        <td>{{country.population}}</td>
+      </tr>
+      <tr>
+        <td>Area</td>
+        <td>{{country.areaInSqKm}} square km</td>
+      </tr>
+      <tr>
+        <td>Capital:</td>
+        <td [innerText]="country.capital"></td>
+      </tr>
+      <tr>
+        <td>Population of Capital:</td>
+        <td>{{country.population }}</td>
+      </tr>
+        <td><img [src]="countryFlagUrl"/></td>
+        <td><img [src]="countryMapUrl"/></td>
+    </table>
+</div>

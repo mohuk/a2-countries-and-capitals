@@ -6,8 +6,7 @@ import {OnInit} from 'angular2/core';
 @Component({
   selector: 'countries-list',
   templateUrl: 'src/countries-list/countries-list.html',
-  styleUrls: ['src/countries-list/countries-list.css'],
-  providers: [geonames]
+  styleUrls: ['src/countries-list/countries-list.css']
 })
 export class CountriesList implements OnInit{
   countries: ICountry[];
