@@ -6,3 +6,13 @@
 .container h1 {
   text-align: center
 }
+
+.link {
+  color: green;
+  text-decoration: none;
+}
+
+.router-link-active {
+  /* a hack to hide the button on the list page */
+  display: none;
+}
